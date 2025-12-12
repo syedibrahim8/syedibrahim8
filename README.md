@@ -29,16 +29,31 @@
 
 ---
 
-# 🔥 **GitHub Stats**
+## 📊 GitHub Stats
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=syedibrahim08&show_icons=true&theme=radical" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=syedibrahim08&layout=compact&theme=radical" height="165" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=syedibrahim08&theme=radical" />
-</p>
+<table width="100%">
+  <tr>
+    <td width="40%" align="center" style="padding: 20px; vertical-align: top;">
+      <img 
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=syedibrahim8&layout=compact&theme=tokyonight&hide_border=true"
+        alt="Top Languages"
+        style="width: 100%; max-width: 380px; border-radius: 12px;"
+        />
+  </td>
+    <td width="60%" align="center" style="padding: 20px;">
+      <img 
+        src="https://nirzak-streak-stats.vercel.app/?user=syedibrahim8&theme=dark&hide_border=true"
+        alt="GitHub Streak"
+        style="width: 100%; max-width: 500px; border-radius: 14px; margin-bottom: 25px;"
+      />
+      <img 
+        src="https://github-readme-stats.vercel.app/api?username=syedibrahim8&show_icons=true&theme=tokyonight&hide_border=true"
+        alt="GitHub Stats"
+        style="width: 100%; max-width: 500px;"
+      />
+    </td>
+  </tr>
+</table>
 
 ---
 
