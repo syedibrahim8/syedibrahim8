@@ -35,7 +35,9 @@
   <tr>
     <td width="40%" align="center" style="padding: 20px; vertical-align: top;">
       <img 
-          ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=syedibrahim08&layout=compact&theme=tokyonight&hide_border=true)
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=syedibrahim08&layout=compact&theme=tokyonight&hide_border=true" 
+          alt="Top Languages"
+          style="width: 100%; max-width: 380px; border-radius: 12px;"
         />
   </td>
     <td width="60%" align="center" style="padding: 20px;">
