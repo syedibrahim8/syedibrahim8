@@ -16,7 +16,7 @@
 <ul>
   <li>🌱 Currently learning <b>Full Stack Web Development</b></li>
   <li>💡 Passionate about Web Apps, Automation & Problem Solving</li>
-  <li>📫 Reach me at: <b>syedibrahimofficial1@gmail.com</b></li>
+  <li>📫 Reach me at: <b>📩syedibrahimofficial1@gmail.com</b></li>
 </ul>
 
 ---
