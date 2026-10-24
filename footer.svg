@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="90" viewBox="0 0 1200 90" role="img" aria-label="Thanks for visiting">
+  <defs>
+    <linearGradient id="rule" gradientUnits="userSpaceOnUse" x1="200" y1="0" x2="1000" y2="0">
+      <stop offset="0" stop-color="#5b7cfa" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#8ea2ff" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .t { font: 400 12px 'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace; letter-spacing: 5px; fill: #5d6984; }
+      .dot { animation: travel 6s cubic-bezier(.6,0,.4,1) infinite; }
+      @keyframes travel { 0% { transform: translateX(0); opacity: 0; } 15%,85% { opacity: 1; } 100% { transform: translateX(800px); opacity: 0; } }
+    </style>
+  </defs>
+  <line x1="200" y1="30" x2="1000" y2="30" stroke="url(#rule)" stroke-width="1"/>
+  <circle class="dot" cx="200" cy="30" r="2.5" fill="#c7d2ff" filter="url(#glow)"/>
+  <text x="600" y="66" text-anchor="middle" class="t">THANKS FOR STOPPING BY</text>
+</svg>

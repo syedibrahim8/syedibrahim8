@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="Syed Ibrahim Ali — Full Stack Developer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07080c"/>
+      <stop offset="1" stop-color="#0d1017"/>
+    </linearGradient>
+
+    <radialGradient id="orbA" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5b7cfa" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#5b7cfa" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e8ecf5"/>
+      <stop offset="0.5" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#9fb0d9"/>
+    </linearGradient>
+
+    <linearGradient id="rule" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="520" y2="0">
+      <stop offset="0" stop-color="#5b7cfa" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#8ea2ff"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#ffffff" fill-opacity="0.06"/>
+    </pattern>
+
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <clipPath id="frame"><rect width="1200" height="340" rx="18"/></clipPath>
+
+    <style>
+      .name  { font: 300 64px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; letter-spacing: 10px; }
+      .role  { font: 400 15px 'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace; letter-spacing: 6px; fill: #8ea2c9; }
+      .meta  { font: 400 13px 'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace; letter-spacing: 3px; fill: #5d6984; }
+      .fade1 { opacity: 0; animation: rise 1.4s cubic-bezier(.2,.7,.2,1) .2s forwards; }
+      .fade2 { opacity: 0; animation: rise 1.4s cubic-bezier(.2,.7,.2,1) .9s forwards; }
+      .fade3 { opacity: 0; animation: rise 1.4s cubic-bezier(.2,.7,.2,1) 1.5s forwards; }
+      .line  { stroke-dasharray: 520; stroke-dashoffset: 520; animation: draw 1.8s cubic-bezier(.6,0,.2,1) .6s forwards; }
+      .pulse { animation: pulse 2.4s ease-in-out infinite; }
+      .driftA { animation: driftA 14s ease-in-out infinite alternate; }
+      .driftB { animation: driftB 18s ease-in-out infinite alternate; }
+      .sweep { animation: sweep 7s ease-in-out 2.5s infinite; }
+      .orbit { transform-origin: 1040px 170px; animation: spin 40s linear infinite; }
+      .orbitR { transform-origin: 1040px 170px; animation: spin 60s linear infinite reverse; }
+      @keyframes rise  { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes draw  { to { stroke-dashoffset: 0; } }
+      @keyframes pulse { 0%,100% { opacity: .35; } 50% { opacity: 1; } }
+      @keyframes driftA { from { transform: translate(0,0); } to { transform: translate(140px,40px); } }
+      @keyframes driftB { from { transform: translate(0,0); } to { transform: translate(-160px,-30px); } }
+      @keyframes sweep { 0% { transform: translateX(-400px); } 60%,100% { transform: translateX(1300px); } }
+      @keyframes spin  { to { transform: rotate(360deg); } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <!-- canvas -->
+    <rect width="1200" height="340" fill="url(#bg)"/>
+    <rect width="1200" height="340" fill="url(#dots)"/>
+
+    <!-- ambient light -->
+    <g filter="url(#blur)">
+      <circle class="driftA" cx="260" cy="90" r="190" fill="url(#orbA)"/>
+      <circle class="driftB" cx="980" cy="260" r="210" fill="url(#orbB)"/>
+    </g>
+
+    <!-- orbital ornament -->
+    <g opacity="0.55">
+      <circle cx="1040" cy="170" r="92" fill="none" stroke="#ffffff" stroke-opacity="0.07"/>
+      <circle cx="1040" cy="170" r="62" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-dasharray="2 6"/>
+      <g class="orbit">
+        <circle cx="1132" cy="170" r="3" fill="#8ea2ff" filter="url(#glow)"/>
+      </g>
+      <g class="orbitR">
+        <circle cx="1040" cy="108" r="2" fill="#2dd4bf" filter="url(#glow)"/>
+      </g>
+      <circle cx="1040" cy="170" r="4" fill="#e8ecf5" opacity="0.8"/>
+    </g>
+
+    <!-- light sweep -->
+    <rect class="sweep" x="0" y="0" width="260" height="340" fill="url(#sheen)" transform="skewX(-20)"/>
+
+    <!-- type -->
+    <g transform="translate(90,0)">
+      <g class="fade1">
+        <circle class="pulse" cx="4" cy="96" r="4" fill="#2dd4bf" filter="url(#glow)"/>
+        <text x="20" y="101" class="meta">AVAILABLE FOR OPPORTUNITIES</text>
+      </g>
+
+      <text x="0" y="182" class="name fade1" fill="url(#name)">SYED IBRAHIM ALI</text>
+
+      <line class="line" x1="0" y1="212" x2="520" y2="212" stroke="url(#rule)" stroke-width="1.2"/>
+
+      <text x="0" y="248" class="role fade2">FULL STACK DEVELOPER  ·  SOFTWARE ENGINEER  ·  AI</text>
+      <text x="0" y="280" class="meta fade3">RIYADH, SAUDI ARABIA  /  CS ENGINEERING, JNTU HYDERABAD</text>
+    </g>
+
+    <!-- hairline frame -->
+    <rect x="0.5" y="0.5" width="1199" height="339" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+  </g>
+</svg>
