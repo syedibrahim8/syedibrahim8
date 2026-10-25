@@ -87,9 +87,6 @@ Open to **Full Stack**, **Software Engineering** and **AI/ML** roles in Saudi Ar
   <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=syedibrahim8&layout=compact&hide_border=true&border_radius=14&bg_color=0d1017&title_color=c7d2ff&text_color=8ea2c9" alt="Top languages"/>
 </p>
 
-<p align="center">
-  <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=syedibrahim8&bg_color=0d1017&color=8ea2c9&line=5b7cfa&point=2dd4bf&area=true&area_color=5b7cfa&hide_border=true&radius=14" alt="Contribution graph"/>
-</p>
 
 <p align="center">
   <picture>
